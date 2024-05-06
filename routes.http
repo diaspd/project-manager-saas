@@ -1,0 +1,11 @@
+@baseUrlLocal = http://localhost:3333
+
+# @name setUser
+POST {{baseUrlLocal}}/users
+Content-Type: application/json
+
+{
+  "name": "Pedro Dias",
+  "email": "pedropd@gmail.com",
+  "password": "123456"
+}
