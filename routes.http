@@ -6,6 +6,17 @@ Content-Type: application/json
 
 {
   "name": "Pedro Dias",
-  "email": "pedropd@gmail.com",
+  "email": "pedropd@acme.com",
+  "password": "123456"
+}
+###
+
+# @name validatePassword
+POST {{baseUrlLocal}}/sessions/password
+Content-Type: application/json
+
+{
+  "name": "Pedro Dias",
+  "email": "pedropd@acme.com",
   "password": "123456"
 }
