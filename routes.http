@@ -1,4 +1,5 @@
 @baseUrlLocal = http://localhost:3333
+@userToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYjgwNDkwYy0yMzA3LTQ4MWItOTRjZC01YTM0NmQzMDQ3NDQiLCJpYXQiOjE3MTU0ODUzOTEsImV4cCI6MTcxNjA5MDE5MX0.5FnQlNkPzP01uPr1HEMcbOkdKflhXLibXRVhIruAx8s 
 
 # @name setUser
 POST {{baseUrlLocal}}/users
@@ -20,3 +21,10 @@ Content-Type: application/json
   "email": "pedropd@acme.com",
   "password": "123456"
 }
+
+###
+
+# @name getValidatedUser
+GET {{baseUrlLocal}}/profile
+Content-Type: application/json
+Authorization: Bearer {{userToken}}
