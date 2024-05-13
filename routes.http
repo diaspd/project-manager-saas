@@ -10,6 +10,7 @@ Content-Type: application/json
   "email": "pedropd@acme.com",
   "password": "123456"
 }
+
 ###
 
 # @name validatePassword
