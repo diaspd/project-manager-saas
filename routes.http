@@ -1,6 +1,8 @@
 @baseUrlLocal = http://localhost:3333
 @userToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMGY3NDhiNS1kODFiLTQ5MDktYjRkZi0zOTk5YTM5YTA1NmQiLCJpYXQiOjE3MTU5NzU1NjQsImV4cCI6MTcxNjU4MDM2NH0.tjP4Wa8S3G0P2vzuZTT6kf6kY5eZAYKTc9QgVIFlH3A
 
+@authToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYjgwNDkwYy0yMzA3LTQ4MWItOTRjZC01YTM0NmQzMDQ3NDQiLCJpYXQiOjE3MTY4NjEyNDgsImV4cCI6MTcxNzQ2NjA0OH0.AuwzoC3hhO59rApPs21TjDtaKX8EHjR5wEItZd5NZpk
+
 # @name setUser
 POST {{baseUrlLocal}}/users
 Content-Type: application/json
