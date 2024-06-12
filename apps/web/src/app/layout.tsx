@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Create Next App',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
