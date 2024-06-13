@@ -1,20 +1,7 @@
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
-import { Separator } from '@/components/ui/separator'
+import { auth } from '@/auth/auth'
 
-export default function Home() {
-  return (
-    <div className="mt-24 flex flex-col items-center justify-center">
-      <div className="max-w-52 space-y-2">
-        <div className="flex flex-col justify-center gap-2">
-          <Label>Nome</Label>
-          <Input placeholder="Name" />
-        </div>
+export default async function Home() {
+  const { user } = await auth()
 
-        <Separator />
-        <Button>Sign In</Button>
-      </div>
-    </div>
-  )
+  return <pre>{JSON.stringify(user, null, 2)}</pre>
 }
