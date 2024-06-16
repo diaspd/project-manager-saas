@@ -25,23 +25,23 @@ export async function ProfileButton() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="flex items-center gap-3 outline-none">
+      <DropdownMenuTrigger className="group flex items-center gap-3 outline-none">
         <div className="flex flex-col items-end">
           <span className="text-sm font-medium">{user.name}</span>
           <span className="text-xs text-muted-foreground">{user.email}</span>
         </div>
 
-        <Avatar>
+        <Avatar className="size-8">
           {user.avatarUrl && <AvatarImage src={user.avatarUrl} />}
           {user.name && (
             <AvatarFallback>{getInitials(user.name)}</AvatarFallback>
           )}
         </Avatar>
 
-        <ChevronDown className="size-4 text-muted-foreground" />
+        <ChevronDown className="size-4 text-muted-foreground duration-100 group-data-[state='open']:rotate-180" />
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="end" sideOffset={8}>
         <DropdownMenuItem asChild>
           <a href="/api/auth/sign-out">
             <LogOut className="mr-2 size-4" />
