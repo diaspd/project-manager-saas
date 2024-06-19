@@ -20,14 +20,14 @@
 
 ## 🚀 Getting started
 
-### api
+### Api
 
 Clone the project and access the folder.
 
 ```bash
-$ git clone 
+$ git clone https://github.com/diaspd/project-manager-saas.git
 $ cd 
-$ cd api
+$ cd apps/api
 ```
 
 ## Installation
@@ -50,12 +50,12 @@ The app will be available on `http://localhost:3333`
 $ 
 ```
 
-### web
+### Web
 
 ## Setting the app
 
 ```bash
-$ cd web
+$ cd apps/web
 ```
 
 ## Installation
@@ -86,6 +86,7 @@ This project was developed with the following technologies:
 - Next 15
 - Fastify
 - Shadcn/ui
+- Monorepo
 </b>
 
 </br>
