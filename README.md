@@ -6,7 +6,8 @@
   <b>
     <a href="#-Technologies"><b>Technologies</b></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-Project"><b>Project</b></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-Roles&permissions"><b>Roles & permissions</b></a>&nbsp;&nbsp;&nbsp;
+    <a href="#-Roles"><b>Roles</b></a>&nbsp;&nbsp;&nbsp;
+    <a href="#-Permissions"><b>Permissions</b></a>&nbsp;&nbsp;&nbsp;
   </b>  
 </div>
 
@@ -96,9 +97,7 @@ This project was developed with the following technologies:
 
 <br></br>
 
-## 🔐 Roles & permissions.
-
-### Roles
+## 📚 Roles.
 
 - Owner (count as administrator)
 - Administrator
@@ -106,7 +105,7 @@ This project was developed with the following technologies:
 - Billing (one per organization)
 - Anonymous
 
-### Permissions table
+## 🔐 Permissions.
 
 |                          | Administrator | Member | Billing | Anonymous |
 | ------------------------ | ------------- | ------ | ------- | --------- |
