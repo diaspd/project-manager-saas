@@ -15,7 +15,9 @@ export async function Header() {
   return (
     <div className="mx-auto flex max-w-[1200px] items-center justify-between border-b pb-2">
       <div className="flex items-center gap-3">
-        <Image src={Logo} className="size-5 dark:invert" alt="Logo" />
+        <a href="/">
+          <Image src={Logo} className="size-5 dark:invert" alt="Logo" />
+        </a>
 
         <Slash className="size-3 -rotate-[24deg] text-border" />
 

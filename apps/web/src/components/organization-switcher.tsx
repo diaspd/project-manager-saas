@@ -17,6 +17,7 @@ import {
 
 export async function OrganizationSwitcher() {
   const currentOrg = getCurrentOrg()
+
   const { organizations } = await getOrganizations()
 
   const currentOrganization = organizations.find(
@@ -43,7 +44,6 @@ export async function OrganizationSwitcher() {
         )}
         <ChevronsUpDown className="ml-auto size-4 text-muted-foreground" />
       </DropdownMenuTrigger>
-
       <DropdownMenuContent
         align="end"
         alignOffset={-16}
@@ -69,12 +69,11 @@ export async function OrganizationSwitcher() {
           })}
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-
         <DropdownMenuItem asChild>
-          <a href="/create-organization">
+          <Link href="/create-organization">
             <PlusCircle className="mr-2 size-4" />
-            Create New
-          </a>
+            Create new
+          </Link>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

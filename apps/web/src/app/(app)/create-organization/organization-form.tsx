@@ -67,19 +67,18 @@ export function OrganizationForm() {
       </div>
 
       <div className="space-y-1">
-        <div className="flex items-baseline space-x-2">
-          <div className="my-0.5">
+        <div className="flex items-start space-x-2">
+          <div className="translate-y-0.5">
             <Checkbox
               name="shouldAttachUsersByDomain"
               id="shouldAttachUsersByDomain"
             />
           </div>
-
           <label htmlFor="shouldAttachUsersByDomain" className="space-y-1">
             <span className="text-sm font-medium leading-none">
               Auto-join new members
             </span>
-            <p>
+            <p className="text-sm text-muted-foreground">
               This will automatically invite all members with same e-mail domain
               to this organization.
             </p>
