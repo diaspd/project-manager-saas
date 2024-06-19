@@ -35,16 +35,8 @@ $ cd apps/api
 
 ```bash
 $ pnpm install
+$ pnpm run db:migrate
 ```
-
-## Running the app
-
-```bash
-$ pnpm run dev
-```
-The app will be available on `http://localhost:3333`
-
-</br>
 
 ## Running the Docker
 ```
@@ -65,17 +57,21 @@ $ cd apps/web
 $ pnpm install
 ```
 
+`Set local variables on .env.example`
+
 ## Running the app
 
 ```bash
+$ cd project-manager-saas
+$ pnpm run install
 $ pnpm run dev
 ```
 
-The app will be available on `http://localhost:3000`
+The api will be available on `http://localhost:3333`
+
+The app web will be available on `http://localhost:3000`
 
 </br>
-
-"Don't forget to set local variables on .env.example"
 
 <br></br>
 
