@@ -48,7 +48,7 @@ The app will be available on `http://localhost:3333`
 
 ## Running the Docker
 ```
-$ 
+$ docker compose up -d
 ```
 
 ### Web
