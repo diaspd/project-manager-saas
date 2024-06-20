@@ -21,13 +21,25 @@
 
 ## 🚀 Getting started
 
-### Api
+`Set local variables on ".env.example" file, and rename it to ".env"`
 
 Clone the project and access the folder.
 
 ```bash
 $ git clone https://github.com/diaspd/project-manager-saas.git
 $ cd 
+```
+
+## Running the Docker
+```
+$ docker compose up -d
+```
+
+### Api
+
+## Setting the app
+
+```bash
 $ cd apps/api
 ```
 
@@ -36,11 +48,6 @@ $ cd apps/api
 ```bash
 $ pnpm install
 $ pnpm run db:migrate
-```
-
-## Running the Docker
-```
-$ docker compose up -d
 ```
 
 ### Web
@@ -57,13 +64,10 @@ $ cd apps/web
 $ pnpm install
 ```
 
-`Set local variables on .env.example`
-
 ## Running the app
 
 ```bash
 $ cd project-manager-saas
-$ pnpm run install
 $ pnpm run dev
 ```
 
@@ -72,8 +76,6 @@ The api will be available on `http://localhost:3333`
 The app web will be available on `http://localhost:3000`
 
 </br>
-
-<br></br>
 
 ## 💻 Technologies
 
@@ -91,7 +93,7 @@ This project was developed with the following technologies:
 ## 📄 Project
 💰 This project contains all the necessary boilerplate to setup a multi-tenant SaaS with Next.js including authentication and RBAC authorization.
 
-<br></br>
+</br>
 
 ## 📚 Roles.
 
@@ -100,6 +102,8 @@ This project was developed with the following technologies:
 - Member
 - Billing (one per organization)
 - Anonymous
+
+</br>
 
 ## 🔐 Permissions.
 
@@ -128,6 +132,8 @@ This project was developed with the following technologies:
 - Only owners may transfer organization ownership;
 - Only administrators and project authors may update/delete the project;
 - Members can leave their own organization;
+
+</br>
 
 Made with ♥ by Pedro Dias. 👋 Follow me on social media! </br>
 
