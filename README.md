@@ -1,52 +1,101 @@
-@@ -0,0 +1,83 @@
-# Next.js SaaS + RBAC
+<h1 align="center">
+   Next.js SaaS + RBAC
+</h1> 
 
-This project contains all the necessary boilerplate to setup a multi-tenant SaaS with Next.js including authentication and RBAC authorization.
+<div align="center">
+  <b>
+    <a href="#-Technologies"><b>Technologies</b></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-Project"><b>Project</b></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-Roles"><b>Roles</b></a>&nbsp;&nbsp;&nbsp;
+    <a href="#-Permissions"><b>Permissions</b></a>&nbsp;&nbsp;&nbsp;
+  </b>  
+</div>
 
-## Features
+---
 
-### Authentication
+<div align="center">
+   <img alt="project img" title="image" src="./apps/web/src/assets/logo.svg" width="5%"/>
+</div> 
 
-- [x] It should be able to authenticate using e-mail & password;
-- [x] It should be able to authenticate using Github account;
-- [x] It should be able to recover password using e-mail;
-- [x] It should be able to create an account (e-mail, name and password);
+</br>
 
-### Organizations
+## 🚀 Getting started
 
-- [x] It should be able to create a new organization;
-- [x] It should be able to get organizations to which the user belongs;
-- [x] It should be able to update an organization;
-- [x] It should be able to shutdown an organization;
-- [x] It should be able to transfer organization ownership;
+`Set local variables on ".env.example" file, and rename it to ".env"`
 
-### Invites
+Clone the project and access the folder.
 
-- [ ] It should be able to invite a new member (e-mail, role);
-- [ ] It should be able to accept an invite;
-- [ ] It should be able to revoke a pending invite;
+```bash
+$ git clone https://github.com/diaspd/project-manager-saas.git
+$ cd 
+```
 
-### Members
+## Running the Docker
+```
+$ docker compose up -d
+```
 
-- [ ] It should be able to get organization members;
-- [ ] It should be able to update a member role;
+### Api
 
-### Projects
+## Setting the app
 
-- [ ] It should be able to get projects within a organization;
-- [ ] It should be able to create a new project (name, url, description);
-- [ ] It should be able to update a project (name, url, description);
-- [ ] It should be able to delete a project;
+```bash
+$ cd apps/api
+```
 
-### Billing
+## Installation
 
-- [ ] It should be able to get billing details for organization ($20 per project / $10 per member excluding billing role);
+```bash
+$ pnpm install
+$ pnpm run db:migrate
+```
 
-## RBAC
+### Web
 
-Roles & permissions.
+## Setting the app
 
-### Roles
+```bash
+$ cd apps/web
+```
+
+## Installation
+
+```bash
+$ pnpm install
+```
+
+## Running the app
+
+```bash
+$ cd project-manager-saas
+$ pnpm run dev
+```
+
+The api will be available on `http://localhost:3333`
+
+The app web will be available on `http://localhost:3000`
+
+</br>
+
+## 💻 Technologies
+
+This project was developed with the following technologies:
+<b>
+- React 19
+- Next 15
+- Fastify
+- Shadcn/ui
+- Monorepo
+</b>
+
+</br>
+
+## 📄 Project
+💰 This project contains all the necessary boilerplate to setup a multi-tenant SaaS with Next.js including authentication and RBAC authorization.
+
+</br>
+
+## 📚 Roles.
 
 - Owner (count as administrator)
 - Administrator
@@ -54,7 +103,9 @@ Roles & permissions.
 - Billing (one per organization)
 - Anonymous
 
-### Permissions table
+</br>
+
+## 🔐 Permissions.
 
 |                          | Administrator | Member | Billing | Anonymous |
 | ------------------------ | ------------- | ------ | ------- | --------- |
@@ -81,3 +132,9 @@ Roles & permissions.
 - Only owners may transfer organization ownership;
 - Only administrators and project authors may update/delete the project;
 - Members can leave their own organization;
+
+</br>
+
+Made with ♥ by Pedro Dias. 👋 Follow me on social media! </br>
+
+If you can give a little star, I appreciate it 🤩
