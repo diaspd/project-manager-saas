@@ -1,7 +1,7 @@
 @baseUrlLocal = http://localhost:3333
 @userToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMGY3NDhiNS1kODFiLTQ5MDktYjRkZi0zOTk5YTM5YTA1NmQiLCJpYXQiOjE3MTU5NzU1NjQsImV4cCI6MTcxNjU4MDM2NH0.tjP4Wa8S3G0P2vzuZTT6kf6kY5eZAYKTc9QgVIFlH3A
 
-@authToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYjgwNDkwYy0yMzA3LTQ4MWItOTRjZC01YTM0NmQzMDQ3NDQiLCJpYXQiOjE3MTY4NjEyNDgsImV4cCI6MTcxNzQ2NjA0OH0.AuwzoC3hhO59rApPs21TjDtaKX8EHjR5wEItZd5NZpk
+@authToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYjgwNDkwYy0yMzA3LTQ4MWItOTRjZC01YTM0NmQzMDQ3NDQiLCJpYXQiOjE3MjE1Mjk4MjcsImV4cCI6MTcyMjEzNDYyN30.MTsPMdleBI7LIXorBDGlR3F8Oj5MvlNLV6ll37opBig
 
 # @name setUser
 POST {{baseUrlLocal}}/users
@@ -31,3 +31,10 @@ Content-Type: application/json
 GET {{baseUrlLocal}}/profile
 Content-Type: application/json
 Authorization: Bearer {{userToken}}
+
+###
+
+# @name getOrgProjects
+GET {{baseUrlLocal}}/organizations/acme-admin/projects
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
