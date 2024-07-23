@@ -8,7 +8,7 @@ import {
 } from '@/components/ui/card'
 
 import { OrganizationForm } from '../../organization-form'
-import { ShutdownOrganizationButton } from './shutdown-organization-button'
+import { ShutdownDialog } from './shutdown-dialog'
 
 export default async function Settings() {
   const permissions = await ability()
@@ -25,19 +25,18 @@ export default async function Settings() {
         {canUpdateOrganization && (
           <Card>
             <CardHeader>
-              <CardTitle>Organization Settings</CardTitle>
+              <CardTitle>Organization settings</CardTitle>
               <CardDescription>
-                Upadate your organization details
+                Update your organization details
               </CardDescription>
             </CardHeader>
-
             <CardContent>
               <OrganizationForm />
             </CardContent>
           </Card>
         )}
 
-        {canGetBilling && <div>Billing</div>}
+        {canGetBilling && <div>billing</div>}
 
         {canShutdownOrganization && (
           <Card>
@@ -48,9 +47,8 @@ export default async function Settings() {
                 You cannot undo this action.
               </CardDescription>
             </CardHeader>
-
             <CardContent>
-              <ShutdownOrganizationButton />
+              <ShutdownDialog />
             </CardContent>
           </Card>
         )}

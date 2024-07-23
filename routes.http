@@ -38,3 +38,18 @@ Authorization: Bearer {{userToken}}
 GET {{baseUrlLocal}}/organizations/acme-admin/projects
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
+
+###
+
+# @name deleteOrg
+
+DELETE  {{baseUrlLocal}}/organizations/rocketseat
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+###
+
+# @name getOrg
+GET {{baseUrlLocal}}/organizations
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
