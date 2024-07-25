@@ -43,7 +43,7 @@ Authorization: Bearer {{authToken}}
 
 # @name deleteOrg
 
-DELETE  {{baseUrlLocal}}/organizations/rocketseat
+DELETE  {{baseUrlLocal}}/organizations/fddf
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
