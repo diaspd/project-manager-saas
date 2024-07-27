@@ -127,6 +127,7 @@ This project was developed with the following technologies:
 > ✅ = allowed
 > ❌ = not allowed
 > ⚠️ = allowed w/ conditions
+
 #### Conditions
 
 - Only owners may transfer organization ownership;
