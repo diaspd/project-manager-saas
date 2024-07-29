@@ -83,6 +83,7 @@ This project was developed with the following technologies:
 <b>
 - React 19
 - Next 15
+- Noje.js
 - Fastify
 - Shadcn/ui
 - Monorepo
