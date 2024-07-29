@@ -17,7 +17,7 @@ export async function createInvite(app: FastifyInstance) {
       '/organizations/:slug/invites',
       {
         schema: {
-          tags: ['invites'],
+          tags: ['Invites'],
           summary: 'Create a new invite',
           security: [{ bearerAuth: [] }],
           body: z.object({
@@ -50,11 +50,11 @@ export async function createInvite(app: FastifyInstance) {
 
         const { email, role } = request.body
 
-        const [, domain] = email
+        const [, domain] = email.split('@')
 
         if (
           organization.shouldAttachUsersByDomain &&
-          domain !== organization.domain
+          domain === organization.domain
         ) {
           throw new BadRequestError(
             `Users with '${domain}' domain will join your organization automatically on login.`,
