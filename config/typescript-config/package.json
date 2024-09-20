@@ -3,5 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
-  "files": ["library.json", "node.json", "nextjs.json"]
+  "files": [
+    "library.json",
+    "node.json",
+    "nextjs.json"
+  ],
+  "dependencies": {
+    "@saas/tsconfig": "file:"
+  }
 }
