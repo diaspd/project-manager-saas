@@ -89,6 +89,7 @@ This project was developed with the following technologies:
 - Fastify
 - Shadcn/ui
 - Monorepo
+- Casl
 </b>
 
 </br>
