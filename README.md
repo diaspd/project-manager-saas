@@ -16,9 +16,7 @@
 ---
 
 <div align="center">
-   <video alt="project video" width="100%" height="240" controls>
-      <source src="./apps/web/src/assets/template.mp4" type="video/mp4">
-   </video>
+   <img src="./apps/web/src/assets/template.gif" />  
 </div> 
 
 </br>
