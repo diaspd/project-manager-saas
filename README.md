@@ -16,7 +16,9 @@
 ---
 
 <div align="center">
-   <img alt="project img" title="image" src="./apps/web/src/assets/logo.svg" width="5%"/>
+   <video alt="project video" width="100%" height="240" controls>
+      <source src="./apps/web/src/assets/template.mp4" type="video/mp4">
+   </video>
 </div> 
 
 </br>
