@@ -1,6 +1,7 @@
 {
   "name": "saas",
   "private": true,
+  "author": "pedro_dias",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
